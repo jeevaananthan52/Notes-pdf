@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        h1, h2 {
+            margin-bottom: 10px;
+        }
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        code {
+            background-color: #f8f8f8;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        pre {
+            background-color: #f8f8f8;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Introduction to SQL</h1>
+        <p>Structured Query Language: The Language of Databases</p>
+    </header>
+
+    <section id="what-is-sql">
+        <h2>What is SQL?</h2>
+        <p>SQL (Structured Query Language) is a standard programming language used to manage and manipulate relational databases. It allows users to create, read, update, and delete data in databases. SQL is essential for working with data in applications, websites, and business systems.</p>
+    </section>
+
+    <section id="basic-commands">
+        <h2>Basic SQL Commands</h2>
+        <p>SQL commands are divided into several categories:</p>
+        <ul>
+            <li><strong>Data Definition Language (DDL):</strong> CREATE, ALTER, DROP</li>
+            <li><strong>Data Manipulation Language (DML):</strong> SELECT, INSERT, UPDATE, DELETE</li>
+            <li><strong>Data Control Language (DCL):</strong> GRANT, REVOKE</li>
+            <li><strong>Transaction Control Language (TCL):</strong> COMMIT, ROLLBACK</li>
+        </ul>
+    </section>
+
+    <section id="examples">
+        <h2>SQL Examples</h2>
+        <h3>Creating a Table</h3>
+        <pre><code>CREATE TABLE users (
+    id INT PRIMARY KEY,
+    name VARCHAR(50),
+    email VARCHAR(100)
+);</code></pre>
+
+        <h3>Inserting Data</h3>
+        <pre><code>INSERT INTO users (id, name, email) VALUES (1, 'John Doe', 'john@example.com');</code></pre>
+
+        <h3>Selecting Data</h3>
+        <pre><code>SELECT * FROM users;</code></pre>
+
+        <h3>Updating Data</h3>
+        <pre><code>UPDATE users SET email = 'john.doe@example.com' WHERE id = 1;</code></pre>
+
+        <h3>Deleting Data</h3>
+        <pre><code>DELETE FROM users WHERE id = 1;</code></pre>
+    </section>
+
+    <section id="benefits">
+        <h2>Benefits of SQL</h2>
+        <ul>
+            <li>Standardized language across different database systems</li>
+            <li>Efficient data retrieval and manipulation</li>
+            <li>Supports complex queries and data analysis</li>
+            <li>Integrates well with programming languages</li>
+            <li>Provides data security and integrity</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 SQL Information Page. Learn more about databases!</p>
+    </footer>
+</body>
+</html>
