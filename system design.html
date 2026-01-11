@@ -3,185 +3,437 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SYSTEM DESIGN
-    </title>
-    <link rel="stylesheet" href="system design css.css">
+    <title>System Design Mastery Portal</title>
+    <link rel="stylesheet" href="system-design-enhanced.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    
+    <header>
+        <h1>System Design Mastery</h1>
+        <p class="tagline">Master 25+ essential system design concepts to ace your interviews and build scalable systems</p>
+        <div class="motivation-box">
+            <p>"Architects aren't born, they're built - one concept at a time. Your journey to mastery starts with these fundamentals."</p>
+        </div>
+    </header>
 
     <main>
-        <h1>System Design Key Concepts</h1>
-            <div class="link-card">
-                <h2>Scalability Blog</h2>
-              
-                <a href="https://blog.algomaster.io/p/scalability" class="link-button" target="_blank">Read Scalability</a>
+        <div class="progress-section">
+            <h2>Your Learning Dashboard</h2>
+            <p>Track your progress. Every concept you master brings you closer to system design expertise.</p>
+            <div class="study-timer">
+                <div class="timer-display">00:00:00</div>
+                <div class="timer-controls">
+                    <button id="startTimer"><i class="fas fa-play"></i> Start Study Session</button>
+                    <button id="pauseTimer" disabled><i class="fas fa-pause"></i> Pause</button>
+                    <button id="resetTimer"><i class="fas fa-redo"></i> Reset</button>
+                </div>
             </div>
+            <div class="achievement-badges">
+                <div class="badge">
+                    <i class="fas fa-book-open"></i>
+                    <span>Concepts Studied: <span id="conceptsStudied">0</span>/25</span>
+                </div>
+                <div class="badge">
+                    <i class="fas fa-clock"></i>
+                    <span>Total Study Time: <span id="totalStudyTime">0</span> min</span>
+                </div>
+            </div>
+            <p id="studyMessage">Ready to level up your system design skills? Start your study session now!</p>
+        </div>
+
+        <h2 class="section-title">System Design Key Concepts</h2>
+        <p class="section-subtitle">Master these 11 foundational concepts to think like a system architect</p>
+        
+        <div class="links-container">
+            <!-- KEY CONCEPTS - 11 LINKS -->
             <div class="link-card">
+                <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+                <h2>Scalability</h2>
+                <p>Learn how systems handle growth and increased load while maintaining performance.</p>
+                <a href="https://blog.algomaster.io/p/scalability" class="link-button" target="_blank">Study Concept</a>
+            </div>
+            
+            <div class="link-card">
+                <div class="card-icon"><i class="fas fa-tachometer-alt"></i></div>
                 <h2>Latency vs Throughput</h2>
-              
-                <a href="https://aws.amazon.com/compare/the-difference-between-throughput-and-latency/" class="link-button" target="_blank">Read Scalability</a>
+                <p>Understand the trade-offs between response time and data processing capacity.</p>
+                <a href="https://aws.amazon.com/compare/the-difference-between-throughput-and-latency/" class="link-button" target="_blank">Study Concept</a>
             </div>
+            
             <div class="link-card">
+                <div class="card-icon"><i class="fas fa-balance-scale"></i></div>
                 <h2>CAP Theorem</h2>
-              
-                <a href="https://www.bmc.com/blogs/cap-theorem/" class="link-button" target="_blank">Read Scalability</a>
+                <p>The fundamental trade-offs in distributed systems: Consistency, Availability, Partition Tolerance.</p>
+                <a href="https://www.bmc.com/blogs/cap-theorem/" class="link-button" target="_blank">Study Concept</a>
             </div>
+            
             <div class="link-card">
+                <div class="card-icon"><i class="fas fa-database"></i></div>
                 <h2>ACID Transactions</h2>
-              
-                <a href="https://redis.io/glossary/acid-transactions/" class="link-button" target="_blank">Read Scalability</a>
+                <p>Atomicity, Consistency, Isolation, Durability - the four key properties of database transactions.</p>
+                <a href="https://redis.io/glossary/acid-transactions/" class="link-button" target="_blank">Study Concept</a>
             </div>
+            
             <div class="link-card">
+                <div class="card-icon"><i class="fas fa-traffic-light"></i></div>
                 <h2>Rate Limiting</h2>
-              
-                <a href="https://www.imperva.com/learn/application-security/rate-limiting/" class="link-button" target="_blank">Read Scalability</a>
+                <p>Control the rate of requests to prevent abuse and ensure system stability.</p>
+                <a href="https://www.imperva.com/learn/application-security/rate-limiting/" class="link-button" target="_blank">Study Concept</a>
             </div>
-
-             <div class="link-card">
+            
+            <div class="link-card">
+                <div class="card-icon"><i class="fas fa-code"></i></div>
                 <h2>API Design</h2>
-              
-                <a href="https://blog.wahab2.com/api-architecture-best-practices-for-designing-rest-apis-bf907025f5f" class="link-button" target="_blank">Read Scalability</a>
+                <p>Best practices for designing REST APIs that are scalable, maintainable, and developer-friendly.</p>
+                <a href="https://blog.wahab2.com/api-architecture-best-practices-for-designing-rest-apis-bf907025f5f" class="link-button" target="_blank">Study Concept</a>
             </div>
-
+            
             <div class="link-card">
+                <div class="card-icon"><i class="fas fa-sync-alt"></i></div>
                 <h2>Strong vs Eventual Consistency</h2>
-              
-                <a href="https://hackernoon.com/eventual-vs-strong-consistency-in-distributed-databases-282fdad37cf7" class="link-button" target="_blank">Read Scalability</a>
+                <p>When to use immediate consistency vs eventually consistent systems.</p>
+                <a href="https://hackernoon.com/eventual-vs-strong-consistency-in-distributed-databases-282fdad37cf7" class="link-button" target="_blank">Study Concept</a>
             </div>
-
+            
             <div class="link-card">
+                <div class="card-icon"><i class="fas fa-search"></i></div>
                 <h2>Distributed Tracing</h2>
-              
-                <a href="https://www.dynatrace.com/news/blog/what-is-distributed-tracing/" class="link-button" target="_blank">Read Scalability</a>
+                <p>Techniques for monitoring and debugging requests across distributed systems.</p>
+                <a href="https://www.dynatrace.com/news/blog/what-is-distributed-tracing/" class="link-button" target="_blank">Study Concept</a>
             </div>
-
+            
             <div class="link-card">
-                <h2>Synchronous vs. asynchronous communications</h2>
-              
-                <a href="https://www.techtarget.com/searchapparchitecture/tip/Synchronous-vs-asynchronous-communication-The-differences" class="link-button" target="_blank">Read Scalability</a>
+                <div class="card-icon"><i class="fas fa-comments"></i></div>
+                <h2>Synchronous vs Asynchronous Communication</h2>
+                <p>When to use request-response patterns vs event-driven architectures.</p>
+                <a href="https://www.techtarget.com/searchapparchitecture/tip/Synchronous-vs-asynchronous-communication-The-differences" class="link-button" target="_blank">Study Concept</a>
             </div>
-
+            
             <div class="link-card">
+                <div class="card-icon"><i class="fas fa-stream"></i></div>
                 <h2>Batch Processing vs Stream Processing</h2>
-              
-                <a href="https://atlan.com/batch-processing-vs-stream-processing/" class="link-button" target="_blank">Read Scalability</a>
+                <p>Processing data in batches vs real-time streaming architectures.</p>
+                <a href="https://atlan.com/batch-processing-vs-stream-processing/" class="link-button" target="_blank">Study Concept</a>
             </div>
-
+            
             <div class="link-card">
-
+                <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
                 <h2>Fault Tolerance</h2>
-              
-                <a href="https://www.cockroachlabs.com/blog/what-is-fault-tolerance/" class="link-button" target="_blank">Read Scalability</a>
+                <p>Designing systems that continue operating properly in the event of failures.</p>
+                <a href="https://www.cockroachlabs.com/blog/what-is-fault-tolerance/" class="link-button" target="_blank">Study Concept</a>
+            </div>
+        </div>
+
+        <h2 class="section-title">System Design Building Blocks</h2>
+        <p class="section-subtitle">Master 15+ essential components and patterns for designing modern distributed systems</p>
+        
+        <div class="links-container">
+            <!-- BUILDING BLOCKS - 15 LINKS -->
+            <div class="link-card">
+                <div class="card-icon"><i class="fas fa-server"></i></div>
+                <h2>Database Fundamentals</h2>
+                <p>Explore different database types and their use cases in system design.</p>
+                <a href="https://blog.algomaster.io/p/15-types-of-databases" class="link-button" target="_blank">Study Building Block</a>
             </div>
             
-            
-            
-            
-           
-            
-            
-
-            <h1>System Design Building Blocks</h1>
-
             <div class="link-card">
-                <h2>Database</h2>
-              
-                <a href="https://blog.algomaster.io/p/15-types-of-databases" class="link-button" target="_blank">Read Scalability</a>
-            </div>
-
-            <div class="link-card">
+                <div class="card-icon"><i class="fas fa-expand-alt"></i></div>
                 <h2>Horizontal vs Vertical Scaling</h2>
-              
-                <a href="https://www.spiceworks.com/tech/cloud/articles/horizontal-vs-vertical-cloud-scaling/" class="link-button" target="_blank">Read Scalability</a>
+                <p>Scale out by adding more machines vs scale up by adding more power to existing machines.</p>
+                <a href="https://www.spiceworks.com/tech/cloud/articles/horizontal-vs-vertical-cloud-scaling/" class="link-button" target="_blank">Study Building Block</a>
             </div>
-
+            
             <div class="link-card">
+                <div class="card-icon"><i class="fas fa-bolt"></i></div>
                 <h2>Caching</h2>
-              
-                <a href="https://medium.com/must-know-computer-science/system-design-caching-acbd1b02ca01" class="link-button" target="_blank">Read Scalability</a>
+                <p>Store frequently accessed data in fast storage to improve system performance.</p>
+                <a href="https://medium.com/must-know-computer-science/system-design-caching-acbd1b02ca01" class="link-button" target="_blank">Study Building Block</a>
             </div>
-
+            
             <div class="link-card">
+                <div class="card-icon"><i class="fas fa-network-wired"></i></div>
                 <h2>Distributed Caching</h2>
-              
-                <a href="https://redis.io/glossary/distributed-caching/" class="link-button" target="_blank">Read Scalability</a>
+                <p>Caching strategies for distributed systems across multiple servers.</p>
+                <a href="https://redis.io/glossary/distributed-caching/" class="link-button" target="_blank">Study Building Block</a>
             </div>
-
+            
             <div class="link-card">
-
-                <div class="link-card">
+                <div class="card-icon"><i class="fas fa-balance-scale-right"></i></div>
                 <h2>Load Balancing</h2>
-              
-                <a href="https://aws.amazon.com/what-is/load-balancing/" class="link-button" target="_blank">Read Scalability</a>
-            </div>    
-
-            <div class="link-card">
+                <p>Distribute network traffic across multiple servers to ensure reliability and performance.</p>
+                <a href="https://aws.amazon.com/what-is/load-balancing/" class="link-button" target="_blank">Study Building Block</a>
+            </div>
             
+            <div class="link-card">
+                <div class="card-icon"><i class="fas fa-database"></i></div>
                 <h2>SQL vs NoSQL</h2>
-              
-                <a href="https://www.integrate.io/blog/the-sql-vs-nosql-difference/" class="link-button" target="_blank">Read Scalability</a>
+                <p>When to use relational databases vs non-relational databases.</p>
+                <a href="https://www.integrate.io/blog/the-sql-vs-nosql-difference/" class="link-button" target="_blank">Study Building Block</a>
             </div>
-
-            <div class="link-card">
-                <h2> Database Scaling</h2>
-              
-                <a href="https://thenewstack.io/techniques-for-scaling-applications-with-a-database/" class="link-button" target="_blank">Read Scalability</a>
-            </div>
-
-            <div class="link-card">
-                <h2>Data Replication</h2>
-              
-                <a href="https://redis.io/blog/what-is-data-replication/" class="link-button" target="_blank">Read Scalability</a>
-            </div>
-
-            <div class="link-card">
-                <h2>Data Redundancy</h2>
-              
-                <a href="https://www.egnyte.com/guides/governance/data-redundancy" class="link-button" target="_blank">Read Scalability</a>
-            </div>
-
-            <div class="link-card">
-                <h2>Database Sharding</h2>
-              
-                <a href="https://www.mongodb.com/resources/products/capabilities/database-sharding-explained" class="link-button" target="_blank">Read Scalability</a>
-            </div>
-
-            <div class="link-card">
-                <h2>Database Index's</h2>
-              
-                <a href="https://www.progress.com/tutorials/odbc/using-indexes" class="link-button" target="_blank">Read Scalability</a>
-            </div>
-
-            <div class="link-card">
-                <h2>Proxy Server</h2>
-              
-                <a href="https://www.fortinet.com/resources/cyberglossary/proxy-server" class="link-button" target="_blank">Read Scalability</a>
-            </div>
-
-            <div class="link-card">
-                <h2>WebSocket</h2>
-              
-                <a href="https://www.pubnub.com/guides/websockets/" class="link-button" target="_blank">Read Scalability</a>
-            </div>
-
-            <div class="link-card">
-                <h2>API Gateway</h2>
-              
-                <a href="https://www.f5.com/glossary" class="link-button" target="_blank">Read Scalability</a>
-            </div>    
-            <div class="link-card">
-                <h2>Message Queues</h2>
-              
-                <a href="https://medium.com/must-know-computer-science/system-design-message-queues-245612428a22" class="link-button" target="_blank">Read Scalability</a>
-            </div>    
             
-    
+            <div class="link-card">
+                <div class="card-icon"><i class="fas fa-chart-bar"></i></div>
+                <h2>Database Scaling</h2>
+                <p>Techniques for scaling databases to handle increased load and data volume.</p>
+                <a href="https://thenewstack.io/techniques-for-scaling-applications-with-a-database/" class="link-button" target="_blank">Study Building Block</a>
+            </div>
+            
+            <div class="link-card">
+                <div class="card-icon"><i class="fas fa-copy"></i></div>
+                <h2>Data Replication</h2>
+                <p>Maintaining multiple copies of data across different locations for availability and performance.</p>
+                <a href="https://redis.io/blog/what-is-data-replication/" class="link-button" target="_blank">Study Building Block</a>
+            </div>
+            
+            <div class="link-card">
+                <div class="card-icon"><i class="fas fa-clone"></i></div>
+                <h2>Data Redundancy</h2>
+                <p>Creating duplicate data to protect against data loss and ensure system reliability.</p>
+                <a href="https://www.egnyte.com/guides/governance/data-redundancy" class="link-button" target="_blank">Study Building Block</a>
+            </div>
+            
+            <div class="link-card">
+                <div class="card-icon"><i class="fas fa-puzzle-piece"></i></div>
+                <h2>Database Sharding</h2>
+                <p>Horizontal partitioning of databases to distribute data across multiple machines.</p>
+                <a href="https://www.mongodb.com/resources/products/capabilities/database-sharding-explained" class="link-button" target="_blank">Study Building Block</a>
+            </div>
+            
+            <div class="link-card">
+                <div class="card-icon"><i class="fas fa-search"></i></div>
+                <h2>Database Indexes</h2>
+                <p>Optimize database query performance with proper indexing strategies.</p>
+                <a href="https://www.progress.com/tutorials/odbc/using-indexes" class="link-button" target="_blank">Study Building Block</a>
+            </div>
+            
+            <div class="link-card">
+                <div class="card-icon"><i class="fas fa-forward"></i></div>
+                <h2>Proxy Server</h2>
+                <p>Intermediary server that forwards client requests to other servers.</p>
+                <a href="https://www.fortinet.com/resources/cyberglossary/proxy-server" class="link-button" target="_blank">Study Building Block</a>
+            </div>
+            
+            <div class="link-card">
+                <div class="card-icon"><i class="fas fa-plug"></i></div>
+                <h2>WebSocket</h2>
+                <p>Full-duplex communication protocol for real-time, bidirectional communication.</p>
+                <a href="https://www.pubnub.com/guides/websockets/" class="link-button" target="_blank">Study Building Block</a>
+            </div>
+            
+            <div class="link-card">
+                <div class="card-icon"><i class="fas fa-door-open"></i></div>
+                <h2>API Gateway</h2>
+                <p>Single entry point for all client requests to backend services.</p>
+                <a href="https://www.f5.com/glossary" class="link-button" target="_blank">Study Building Block</a>
+            </div>
+            
+            <div class="link-card">
+                <div class="card-icon"><i class="fas fa-inbox"></i></div>
+                <h2>Message Queues</h2>
+                <p>Asynchronous communication between services using message brokers.</p>
+                <a href="https://medium.com/must-know-computer-science/system-design-message-queues-245612428a22" class="link-button" target="_blank">Study Building Block</a>
+            </div>
+        </div>
     </main>
 
-    
+    <footer>
+        <p class="footer-motivation">Every architect was once a beginner. Your consistency today builds your expertise tomorrow.</p>
+        <p>System Design Mastery Portal • 26 Essential Concepts • Your Journey to Architecture Excellence</p>
+        <p>Keep learning, keep building, keep architecting!</p>
+    </footer>
+
+    <script>
+        // Timer functionality
+        let timerInterval;
+        let seconds = 0;
+        let minutes = 0;
+        let hours = 0;
+        let timerRunning = false;
+        let totalStudyTime = 0;
+        let conceptsStudied = 0;
+        
+        const timerDisplay = document.querySelector('.timer-display');
+        const startBtn = document.getElementById('startTimer');
+        const pauseBtn = document.getElementById('pauseTimer');
+        const resetBtn = document.getElementById('resetTimer');
+        const studyMessage = document.getElementById('studyMessage');
+        const conceptsStudiedSpan = document.getElementById('conceptsStudied');
+        const totalStudyTimeSpan = document.getElementById('totalStudyTime');
+        
+        // Load saved data from localStorage
+        function loadProgress() {
+            const savedTime = localStorage.getItem('totalStudyTime');
+            const savedConcepts = localStorage.getItem('conceptsStudied');
+            
+            if (savedTime) {
+                totalStudyTime = parseInt(savedTime);
+                totalStudyTimeSpan.textContent = totalStudyTime;
+            }
+            
+            if (savedConcepts) {
+                conceptsStudied = parseInt(savedConcepts);
+                conceptsStudiedSpan.textContent = conceptsStudied;
+            }
+        }
+        
+        // Save progress to localStorage
+        function saveProgress() {
+            localStorage.setItem('totalStudyTime', totalStudyTime);
+            localStorage.setItem('conceptsStudied', conceptsStudied);
+        }
+        
+        // Update timer display
+        function updateTimerDisplay() {
+            timerDisplay.textContent = 
+                `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        }
+        
+        // Start timer
+        function startTimer() {
+            if (timerRunning) return;
+            
+            timerRunning = true;
+            startBtn.disabled = true;
+            pauseBtn.disabled = false;
+            studyMessage.textContent = "Great! You're building valuable system design skills. Stay focused!";
+            studyMessage.style.color = "#43e97b";
+            
+            timerInterval = setInterval(() => {
+                seconds++;
+                
+                if (seconds === 60) {
+                    seconds = 0;
+                    minutes++;
+                    
+                    // Every 5 minutes, add to total study time
+                    if (minutes % 5 === 0) {
+                        totalStudyTime += 5;
+                        totalStudyTimeSpan.textContent = totalStudyTime;
+                        saveProgress();
+                        
+                        // Show motivational message every 5 minutes
+                        const messages = [
+                            "Great work! 5 more minutes of focused learning!",
+                            "Consistency is key! You're making progress.",
+                            "Every minute counts toward your mastery!",
+                            "Your future self will thank you for this focus!",
+                            "System design expertise is built minute by minute!"
+                        ];
+                        studyMessage.textContent = messages[Math.floor(Math.random() * messages.length)];
+                    }
+                }
+                
+                if (minutes === 60) {
+                    minutes = 0;
+                    hours++;
+                }
+                
+                updateTimerDisplay();
+            }, 1000);
+        }
+        
+        // Pause timer
+        function pauseTimer() {
+            if (!timerRunning) return;
+            
+            timerRunning = false;
+            clearInterval(timerInterval);
+            startBtn.disabled = false;
+            pauseBtn.disabled = true;
+            studyMessage.textContent = "Session paused. Ready to continue your learning journey?";
+            studyMessage.style.color = "rgba(255, 255, 255, 0.9)";
+        }
+        
+        // Reset timer
+        function resetTimer() {
+            pauseTimer();
+            seconds = 0;
+            minutes = 0;
+            hours = 0;
+            updateTimerDisplay();
+            studyMessage.textContent = "Ready to level up your system design skills? Start your study session now!";
+            studyMessage.style.color = "rgba(255, 255, 255, 0.9)";
+        }
+        
+        // Track when a concept link is clicked
+        document.querySelectorAll('.link-button').forEach(button => {
+            button.addEventListener('click', function() {
+                conceptsStudied++;
+                conceptsStudiedSpan.textContent = conceptsStudied;
+                saveProgress();
+                
+                // Show motivational message
+                const messages = [
+                    "Excellent choice! This concept is fundamental to system design.",
+                    "Smart move! Understanding this will make you a better architect.",
+                    "Perfect! This knowledge is key for technical interviews.",
+                    "Great selection! This will help you design more scalable systems.",
+                    "Awesome! You're building a strong foundation in system design."
+                ];
+                
+                const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+                studyMessage.textContent = randomMessage;
+                studyMessage.style.color = "#fee140";
+                
+                // Update the button text temporarily
+                const originalText = this.textContent;
+                this.textContent = "✓ Concept Studied!";
+                this.style.background = "var(--success-gradient)";
+                
+                setTimeout(() => {
+                    this.textContent = originalText;
+                    this.style.background = "var(--primary-gradient)";
+                }, 2000);
+            });
+        });
+        
+        // Add achievement messages based on progress
+        function checkAchievements() {
+            if (conceptsStudied >= 5 && conceptsStudied < 10) {
+                studyMessage.textContent = "Great progress! You've mastered 5+ concepts. Keep going!";
+            } else if (conceptsStudied >= 10 && conceptsStudied < 15) {
+                studyMessage.textContent = "Excellent! 10+ concepts mastered. You're becoming a system design pro!";
+            } else if (conceptsStudied >= 15) {
+                studyMessage.textContent = "Outstanding! You've mastered 15+ concepts. You're well on your way to expertise!";
+            }
+        }
+        
+        // Initialize
+        loadProgress();
+        updateTimerDisplay();
+        checkAchievements();
+        
+        // Event listeners
+        startBtn.addEventListener('click', startTimer);
+        pauseBtn.addEventListener('click', pauseTimer);
+        resetBtn.addEventListener('click', resetTimer);
+        
+        // Add keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            if (e.key === ' ' || e.key === 'Spacebar') {
+                e.preventDefault();
+                if (timerRunning) {
+                    pauseTimer();
+                } else {
+                    startTimer();
+                }
+            }
+            
+            if (e.key === 'r' || e.key === 'R') {
+                resetTimer();
+            }
+        });
+        
+        // Show keyboard shortcut hint
+        setTimeout(() => {
+            studyMessage.textContent = "Pro tip: Press SPACE to start/pause timer, R to reset. Focus on learning!";
+            studyMessage.style.color = "#4facfe";
+            
+            setTimeout(() => {
+                studyMessage.textContent = "Ready to level up your system design skills? Start your study session now!";
+                studyMessage.style.color = "rgba(255, 255, 255, 0.9)";
+            }, 5000);
+        }, 3000);
+    </script>
 </body>
 </html>
-
-
-
